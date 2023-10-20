@@ -6621,11 +6621,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle.noUi-handle-upper {
   overflow: hidden;
   -webkit-line-clamp: 3;
 }
-@media (min-width: 320px) {
-  .blogPost {
-    margin-bottom: 50px;
-  }
-}
 
 @media (min-width: 320px) {
   .blogPost img {
