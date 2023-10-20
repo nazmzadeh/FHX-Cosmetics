@@ -22,6 +22,20 @@
     />
 
     <!-- PLUGINS CSS STYLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="#" rel="stylesheet" id="bootstrap-rtl" />
     <link
@@ -33,8 +47,6 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="#" rel="stylesheet" id="rtl_css" />
     <link href="css/default.css" rel="stylesheet" id="option_color" />
-
-    
   </head>
 
   <body id="body" class="body-wrapper static">
@@ -91,15 +103,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="index.html"
                     >Ana səhifə <span class="sr-only">(current)</span></a
                   >
                 </li>
 
-                <li class="dropdown megaDropMenu nav-item">
+                <li class="dropdown megaDropMenu nav-item active">
                   <a
-                    href="product-left-sidebar.html"
+                    href="products.html"
                     class="nav-link dropdown-toggle"
                     role="button"
                     aria-haspopup="true"
@@ -253,13 +265,13 @@
                   </div>
                 </li>
 
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    href="blog-left-sidebar.html"
+                    href="blogs.html"
                     >Bloq</a
                   >
                 </li>
@@ -320,67 +332,300 @@
           </div>
         </nav>
       </header>
-
-      <!-- PAGE TITLE SECTION -->
-      <section
-        class="clearfix pageTitleArea"
-        style="background-image: url(img/blog/pageTitle-bg.jpg)"
-      >
+      <!-- SINGLE PRODUCT SECTION -->
+      <section class="clearfix singleProduct">
         <div class="container">
-          <div class="pageTitle">
-            <h1>Single Post</h1>
-          </div>
-        </div>
-      </section>
+          <div class="row myRow">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-md-12 px-0 py-2">
+                  <div class="swiper swiper_large_preview">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-1.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-2.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-3.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-4.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-5.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-6.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 px-0 py-2">
+                  <div thumbsSlider="" class="swiper swiper_thumb">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-1.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-2.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-3.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-4.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-5.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="zoom_img">
+                          <img
+                            class="img-fluid"
+                            src="img/products/product-6.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-      <!-- BLOG SINGLE SECTION -->
-      <section class="container-fluid clearfix blogSingle">
-        <div class="container">
-          <div class="blogPost singlePost">
-            <img
-              src="img/blog/blog-content.jpg"
-              data-src="img/blog/blog-content.jpg"
-              alt="Image Blog"
-              class="img-responsive lazyestload"
-            />
-            <h2>The standard Lorem Ipsum passage</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-              unde omnis iste natus error sit voluptatem accusantium doloremque
-              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-              veritatis et quasi architecto.
-            </p>
-            <img
-              src="img/blog/blog-content04.jpg"
-              data-src="img/blog/blog-content04.jpg"
-              class="lazyestload"
-              alt="Image Blog"
-            />Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exerci tation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            <p>
-              ExceCupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-              natus error sit voluptatem accusantium doloremque laudantium,
-              totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-              quasi architecto.
-            </p>
+            <div class="col-md-6">
+              <div class="singleProductInfo">
+                <h2>Handmade Soap</h2>
+                <p>
+                  Məhsul kodu:
+                  <span>1523</span>
+                </p>
+                <ul class="list-inline category">
+                  <li>Categories:</li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Soap</a></li>
+                </ul>
+                <h3>50 ₼ <del> 60 ₼</del></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi.
+                </p>
+
+                <div class="finalCart">
+                  <div class="product-count">
+                    <button class="decrease">-</button>
+                    <span>1</span>
+                    <button class="increase">+</button>
+                  </div>
+                  <a href="cart.html" class="btn btn-primary"
+                    ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Add
+                    to cart</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          
+
+          <div class="row">
+            <div class="col-12">
+              <div class="tabCommon tabOne singleTab">
+                <div class="tab-content patternbg">
+                  <div id="details" class="tab-pane show fade in active">
+                    <h4>Product Description</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum. Sed ut per
+                      spici
+                    </p>
+                    <ul class="list-inline">
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true"></i>Vestibulum
+                        iaculis quam.
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true"></i>Vestibulum
+                        iaculis quam.
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true"></i>Quam ac
+                        libero volutpat placerat.
+                      </li>
+                      <li>
+                        <i class="fa fa-check" aria-hidden="true"></i>Quam ac
+                        libero volutpat placerat.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="relatedTitle">
+                <h2>Bənzər məhsullar</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row related_products_js">
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-1.jpg"
+                    data-src="img/products/related-product-1.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Oil Set</div>
+                <div class="productPrice">15 ₼</div>
+              </a>
+            </div>
+
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-2.jpg"
+                    data-src="img/products/related-product-2.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Herbal Body Cream</div>
+                <div class="productPrice">50 ₼</div>
+              </a>
+            </div>
+
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-3.jpg"
+                    data-src="img/products/related-product-3.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Flying Ninja</div>
+                <div class="productPrice">75 ₼</div>
+              </a>
+            </div>
+
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-4.jpg"
+                    data-src="img/products/related-product-4.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Ninja Silhouette</div>
+                <div class="productPrice">35 ₼</div>
+              </a>
+            </div>
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-2.jpg"
+                    data-src="img/products/related-product-2.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Herbal Body Cream</div>
+                <div class="productPrice">50 ₼</div>
+              </a>
+            </div>
+            <div class="col-md-12">
+              <a href="#" class="realatedInner">
+                <div class="productBox">
+                  <img
+                    src="img/products/related-product-3.jpg"
+                    data-src="img/products/related-product-3.jpg"
+                    alt="Image Product"
+                    class="img-responsive lazyestload"
+                  />
+                </div>
+                <div class="productName">Flying Ninja</div>
+                <div class="productPrice">75 ₼</div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -398,6 +643,7 @@
                 <div class="footerText">
                   <a href="index.html" class="footerLogo footer-brand">
                     <img
+                      class="lazyestload"
                       data-src="img/logo.png"
                       src="img/logo.png"
                       alt="logo"
@@ -418,7 +664,7 @@
                 <div class="useLink">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="product-left-sidebar.html"
+                      <a href="products.html"
                         ><i
                           class="fa fa-angle-double-right"
                           aria-hidden="true"
@@ -587,11 +833,21 @@
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="plugins/isotope/isotope.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <script src="plugins/isotope/isotope-triger.min.js"></script>
+    <script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
+
     <script src="plugins/lazyestload/lazyestload.js"></script>
-
-    <script src="plugins/smoothscroll/SmoothScroll.js"></script>
-
-    js/google-map.js
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/custom.js"></script>
 
     <script>

@@ -29,12 +29,15 @@
       rel="stylesheet"
     />
     <link href="plugins/animate/animate.css" rel="stylesheet" />
+
+    <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+
+    <link href="plugins/isotope/isotope.min.css" rel="stylesheet" />
+
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet" />
     <link href="#" rel="stylesheet" id="rtl_css" />
     <link href="css/default.css" rel="stylesheet" id="option_color" />
-
-    
   </head>
 
   <body id="body" class="body-wrapper static">
@@ -91,7 +94,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="index.html"
                     >Ana səhifə <span class="sr-only">(current)</span></a
                   >
@@ -99,7 +102,7 @@
 
                 <li class="dropdown megaDropMenu nav-item">
                   <a
-                    href="product-left-sidebar.html"
+                    href="products.html"
                     class="nav-link dropdown-toggle"
                     role="button"
                     aria-haspopup="true"
@@ -253,13 +256,13 @@
                   </div>
                 </li>
 
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
-                    href="blog-left-sidebar.html"
+                    href="blogs.html"
                     >Bloq</a
                   >
                 </li>
@@ -323,244 +326,212 @@
       <!-- PAGE TITLE SECTION -->
       <section
         class="clearfix pageTitleArea"
-        style="background-image: url(img/blog/pageTitle-bg02.jpg)"
+        style="background-image: url(img/blog/pageTitle-bg.jpg)"
       >
         <div class="container">
           <div class="pageTitle">
-            <h1>blog page</h1>
+            <h1>Gallery 3 Columns</h1>
           </div>
         </div>
       </section>
 
-      <!-- BLOG SINGLE SECTION -->
-      <section class="container-fluid clearfix blog padding">
+      <!-- GALLERY SECTION -->
+      <section class="clearfix homeGallery padding gallery">
         <div class="container">
           <div class="row">
-            <div class="col-sm-4 col-xs-12">
-              <div class="blogSidebar">
-                <form class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    required=""
-                    placeholder="Search..."
-                    aria-describedby="basic-addon2"
+            <div class="col-xs-12">
+              <div class="filter-container isotopeFilters">
+                <ul class="list-inline filter">
+                  <li class="active">
+                    <a href="#" data-filter="*">all item</a>
+                  </li>
+                  <li><a href="#" data-filter=".hair">hair</a></li>
+                  <li><a href="#" data-filter=".makeup">Make Up</a></li>
+                  <li><a href="#" data-filter=".facial">Facial</a></li>
+                  <li><a href="#" data-filter=".massage">Massage</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row isotopeContainer" id="container">
+            <div class="col-sm-4 isotopeSelector hair">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-1.jpg"
+                    src="img/home/gallery-1.jpg"
+                    alt="Image"
                   />
-                  <button
-                    type="submit"
-                    class="input-group-addon"
-                    id="basic-addon2"
-                  >
-                    <i class="fa fa-search"></i>
-                  </button>
-                </form>
-                <div class="panel panel-default">
-                  <div class="panel-heading">Categories</div>
-                  <div class="panel-body">
-                    <ul class="list-unstyle categoryList">
-                      <li><a href="#">Beauty</a></li>
-                      <li><a href="#">Hair Cut</a></li>
-                      <li><a href="#">Facial</a></li>
-                      <li><a href="#">Massage</a></li>
-                      <li><a href="#">Make up</a></li>
-                      <li><a href="#">Waxing</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="panel panel-default recentBlogPosts">
-                  <div class="panel-heading">Recent Posts</div>
-                  <div class="panel-body">
-                    <div class="media">
-                      <a class="media-left" href="blog-single-fullwidth.html">
-                        <img
-                          class="media-object lazyestload"
-                          data-src="img/blog/blog-new-1.jpg"
-                          src="img/blog/blog-new-1.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div class="media-body">
-                        <h4 class="media-heading">
-                          <a href="blog-single-fullwidth.html"
-                            >Cras vulputate nisi sus</a
-                          >
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="media">
-                      <a class="media-left" href="blog-single-fullwidth.html">
-                        <img
-                          class="media-object lazyestload"
-                          data-src="img/blog/blog-new-2.jpg"
-                          src="img/blog/blog-new-2.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div class="media-body">
-                        <h4 class="media-heading">
-                          <a href="blog-single-fullwidth.html"
-                            >massa iaculis porta dui</a
-                          >
-                        </h4>
-                      </div>
-                    </div>
-                    <div class="media">
-                      <a class="media-left" href="blog-single-fullwidth.html">
-                        <img
-                          class="media-object lazyestload"
-                          data-src="img/blog/blog-new-3.jpg"
-                          src="img/blog/blog-new-3.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div class="media-body">
-                        <h4 class="media-heading">
-                          <a href="blog-single-fullwidth.html"
-                            >venenatis augue vel.</a
-                          >
-                        </h4>
-                      </div>
-                    </div>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-1.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="col-sm-8 col-xs-12">
-              <div class="blogPost">
-                <a href="blog-single-fullwidth.html">
+            <div class="col-sm-4 isotopeSelector makeup">
+              <div class="card">
+                <div class="card-img">
                   <img
-                    src="img/blog/blog-content.jpg"
-                    data-src="img/blog/blog-content.jpg"
-                    alt="Image Blog"
-                    class="img-responsive lazyestload"
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-2.jpg"
+                    src="img/home/gallery-2.jpg"
+                    alt="Image"
                   />
-                </a>
-                <h2>
-                  <a href="blog-single-fullwidth.html"
-                    >The standard Lorem Ipsum passage</a
-                  >
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-2.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="blogPost">
-                <a href="blog-single-fullwidth.html">
+            </div>
+            <div class="col-sm-4 isotopeSelector massage">
+              <div class="card">
+                <div class="card-img">
                   <img
-                    src="img/blog/blog-content02.jpg"
-                    data-src="img/blog/blog-content02.jpg"
-                    alt="Image Blog"
-                    class="img-responsive lazyestload"
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-3.jpg"
+                    src="img/home/gallery-3.jpg"
+                    alt="Image"
                   />
-                </a>
-
-                <h2>
-                  <a href="blog-single-fullwidth.html"
-                    >The standard Lorem Ipsum passage</a
-                  >
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-3.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="blogPost">
-                <a href="blog-single-fullwidth.html">
+            </div>
+            <div class="col-sm-4 isotopeSelector hair">
+              <div class="card">
+                <div class="card-img">
                   <img
-                    src="img/blog/blog-content03.jpg"
-                    data-src="img/blog/blog-content03.jpg"
-                    alt="Image Blog"
-                    class="img-responsive lazyestload"
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-5.jpg"
+                    src="img/home/gallery-5.jpg"
+                    alt="Image"
                   />
-                </a>
-
-                <h2>
-                  <a href="blog-single-fullwidth.html"
-                    >The standard Lorem Ipsum passage</a
-                  >
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-5.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="blogPost">
-                <a href="blog-single-fullwidth.html">
+            </div>
+            <div class="col-sm-4 isotopeSelector makeup">
+              <div class="card">
+                <div class="card-img">
                   <img
-                    src="img/blog/blog-content04.jpg"
-                    data-src="img/blog/blog-content04.jpg"
-                    alt="Image Blog"
-                    class="img-responsive lazyestload"
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-5.jpg"
+                    src="img/home/gallery-5.jpg"
+                    alt="Image"
                   />
-                </a>
-               
-                <h2>
-                  <a href="blog-single-fullwidth.html"
-                    >The standard Lorem Ipsum passage</a
-                  >
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-5.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="blogPost">
-                <a href="blog-single-fullwidth.html">
+            </div>
+            <div class="col-sm-4 isotopeSelector facial">
+              <div class="card">
+                <div class="card-img">
                   <img
-                    src="img/blog/blog-content05.jpg"
-                    data-src="img/blog/blog-content05.jpg"
-                    alt="Image Blog"
-                    class="img-responsive lazyestload"
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-6.jpg"
+                    src="img/home/gallery-6.jpg"
+                    alt="Image"
                   />
-                </a>
-
-                <h2>
-                  <a href="blog-single-fullwidth.html"
-                    >The standard Lorem Ipsum passage</a
-                  >
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo
-                </p>
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-6.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
-
-              <div class="paginationCommon paginationOne">
-                <nav aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li>
-                      <a href="javascript:void(0)" aria-label="Previous">
-                        <span aria-hidden="true"
-                          ><i class="fa fa-chevron-left" aria-hidden="true"></i
-                        ></span>
-                      </a>
-                    </li>
-                    <li class="active"><a href="javascript:void(0)">1</a></li>
-                    <li><a href="javascript:void(0)">2</a></li>
-                    <li><a href="javascript:void(0)">3</a></li>
-                    <li><a href="javascript:void(0)">4</a></li>
-                    <li><a href="javascript:void(0)">5</a></li>
-                    <li>
-                      <a href="javascript:void(0)" aria-label="Next">
-                        <span aria-hidden="true"
-                          ><i class="fa fa-chevron-right" aria-hidden="true"></i
-                        ></span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+            </div>
+            <div class="col-sm-4 isotopeSelector facial">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-7.jpg"
+                    src="img/home/gallery-7.jpg"
+                    alt="Image"
+                  />
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-7.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 isotopeSelector massage">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-8.jpg"
+                    src="img/home/gallery-8.jpg"
+                    alt="Image"
+                  />
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-8.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 isotopeSelector makeup">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    class="img-full lazyestload"
+                    data-src="img/home/gallery-2.jpg"
+                    src="img/home/gallery-2.jpg"
+                    alt="Image"
+                  />
+                  <div class="overlay-content">
+                    <a href="img/home/gallery-2.jpg" data-fancybox="images">
+                      <h5>
+                        <i class="fa fa-plus" aria-hidden="true"></i> <br />Skin
+                        Care
+                      </h5>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -602,7 +573,7 @@
                 <div class="useLink">
                   <ul class="list-unstyled">
                     <li>
-                      <a href="product-left-sidebar.html"
+                      <a href="products.html"
                         ><i
                           class="fa fa-angle-double-right"
                           aria-hidden="true"
@@ -770,6 +741,11 @@
     <!-- JAVASCRIPTS -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="plugins/isotope/isotope.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+
+    <script src="plugins/isotope/isotope-triger.min.js"></script>
 
     <script src="plugins/lazyestload/lazyestload.js"></script>
 
