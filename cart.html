@@ -44,8 +44,6 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="#" rel="stylesheet" id="rtl_css" />
     <link href="css/default.css" rel="stylesheet" id="option_color" />
-
-    
   </head>
 
   <body id="body" class="body-wrapper static">
@@ -119,7 +117,7 @@
                   <div class="categories dropdown-menu">
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -143,7 +141,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -167,7 +165,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -194,7 +192,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -211,7 +209,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -228,7 +226,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -245,7 +243,7 @@
                     </div>
                     <div class="category-item dropdown">
                       <a
-                        href="#"
+                        href="products.html"
                         class="category-link dropdown-toggle"
                         data-toggle="dropdown"
                         role="button"
@@ -276,7 +274,7 @@
 
                 <li class="nav-item">
                   <a
-                    class="nav-link "
+                    class="nav-link"
                     role="button"
                     aria-haspopup="true"
                     aria-expanded="false"
@@ -343,7 +341,7 @@
                       <table class="table">
                         <tbody>
                           <tr>
-                            <td>
+                            <td data-cell="Image">
                               <a href="product-details.html" class="cartImage"
                                 ><img
                                   src="img/products/cart-product-1.jpg"
@@ -352,21 +350,24 @@
                                   alt="Image cart"
                               /></a>
                             </td>
-                            <td>
-                              <a class="text-wrap" href="product-details.html"
-                                >Towel</a
-                              >
-                              <br />
-                              <span>Məhsul kodu: 1523</span>
+                            <td data-cell="Product">
+                              <div>
+                                <a class="text-wrap" href="product-details.html"
+                                  >Towel</a
+                                >
+                                <p>Məhsul kodu: 1523</p>
+                              </div>
                             </td>
-                            <td>
+                            <td data-cell="Quantity">
                               <div class="product-count">
                                 <button class="decrease">-</button>
                                 <span>1</span>
                                 <button class="increase">+</button>
                               </div>
                             </td>
-                            <td><span class="price">79 ₼</span></td>
+                            <td data-cell="Price">
+                              <span class="price">79 ₼</span>
+                            </td>
                             <td>
                               <button
                                 type="button"
@@ -381,7 +382,7 @@
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td data-cell="Image">
                               <a href="product-details.html" class="cartImage"
                                 ><img
                                   src="img/products/cart-product-2.jpg"
@@ -390,21 +391,27 @@
                                   alt="Image cart"
                               /></a>
                             </td>
-                            <td>
-                              <a class="text-wrap" href="product-details.html"></a>
-                                Handmade soap</a
-                              >
-                              <br />
-                              <span>Məhsul kodu: 1523</span>
+                            <td data-cell="Product">
+                              <div>
+                                <a
+                                  class="text-wrap"
+                                  href="product-details.html"
+                                >
+                                  Handmade soap</a
+                                >
+                                <p>Məhsul kodu: 1523</p>
+                              </div>
                             </td>
-                            <td>
+                            <td data-cell="Quantity">
                               <div class="product-count">
                                 <button class="decrease">-</button>
                                 <span>1</span>
                                 <button class="increase">+</button>
                               </div>
                             </td>
-                            <td><span class="price">79 ₼</span></td>
+                            <td data-cell="Price">
+                              <span class="price">79 ₼</span>
+                            </td>
                             <td>
                               <button
                                 type="button"
@@ -433,7 +440,6 @@
                     CəMİ<span class="pull-right">158 ₼</span>
                   </div>
                   <div class="panel-body">
-                  
                     <a
                       href="whatsapp://send?text=Hello!&amp;phone=+994501234567"
                       class="btn btn-primary btn-block"

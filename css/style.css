@@ -1967,7 +1967,7 @@ textarea.form-control {
   position: absolute;
   right: 0;
   margin-left: 0;
-  top: 0;
+  top: 13px;
   content: "\f107";
   font-family: fontawesome;
   border: 0;
@@ -5068,9 +5068,9 @@ footer {
   color: #fff;
   background-color: #ec5598;
 }
-.cartInfo table tr td span {
+.cartInfo table tr td p {
   color: #666;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
   font-family: open sans, sans-serif;
 }
@@ -7425,4 +7425,31 @@ footer .footerText img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width:650px)  {
+  table{
+      text-align: center;
+  }
+  th{
+      display: none;
+  }
+  td{
+      display: flex;
+      justify-content: space-between;
+     
+  }
+  td::before{
+      content: attr(data-cell) " : ";
+      font-weight: 700;
+      text-transform: capitalize;
+  }
+  td:last-child:before{
+    display: none;
+
+  }
+  td:last-child{
+    justify-content: center;
+  }
+
 }
