@@ -5108,9 +5108,7 @@ footer {
 .cartInfo table tr td:last-child {
   text-align: right;
 }
-.cartInfo table tr:last-child td {
-  border: 0;
-}
+
 .cartInfo p {
   color: #222;
   margin-bottom: 18px;
