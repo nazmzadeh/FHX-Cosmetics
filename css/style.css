@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 * {
   outline: 0;
   margin: 0;
@@ -162,8 +162,8 @@ a:focus {
   display: block;
   letter-spacing: normal;
   color: #ec5598;
-  font-family: 'Allura', cursive;
-    font-size: 90px;
+  font-family: "Allura", cursive;
+  font-size: 90px;
   line-height: 42px;
   text-transform: capitalize;
   font-weight: 400;
@@ -1840,12 +1840,14 @@ textarea.form-control {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
-  .main-nav.navbar-sticky .nav-item a.nav-link, span.nav-link {
+  .main-nav.navbar-sticky .nav-item a.nav-link,
+  span.nav-link {
     padding: 29px 10px;
   }
 }
 @media (min-width: 992px) {
-  .main-nav.navbar-sticky .nav-item a.nav-link, span.nav-link {
+  .main-nav.navbar-sticky .nav-item a.nav-link,
+  span.nav-link {
     padding: 29px 30px;
   }
 }
@@ -2003,7 +2005,8 @@ textarea.form-control {
   text-transform: capitalize;
   font-style: normal;
 }
-.main-nav .nav-item a.nav-link, span.nav-link {
+.main-nav .nav-item a.nav-link,
+span.nav-link {
   color: #222;
   padding: 0;
   font-size: 15px;
@@ -2014,7 +2017,8 @@ textarea.form-control {
   transition: all 0.3s ease;
 }
 @media (min-width: 768px) {
-  .main-nav .nav-item a.nav-link, span.nav-link {
+  .main-nav .nav-item a.nav-link,
+  span.nav-link {
     padding: 45px 10px;
     margin: 0;
     color: #222;
@@ -2022,40 +2026,53 @@ textarea.form-control {
   }
 }
 @media (min-width: 992px) {
-  .main-nav .nav-item a.nav-link, span.nav-link {
+  .main-nav .nav-item a.nav-link,
+  span.nav-link {
     padding: 45px 25px;
   }
 }
 @media (min-width: 1200px) {
-  .main-nav .nav-item a.nav-link, span.nav-link {
+  .main-nav .nav-item a.nav-link,
+  span.nav-link {
     padding: 45px 30px;
   }
 }
 @media (min-width: 768px) {
-  .main-nav .nav-item a.nav-link, span.nav-link:hover {
+  .main-nav .nav-item a.nav-link,
+  span.nav-link:hover {
     color: #ec5598;
   }
 }
 @media (min-width: 768px) {
-  .main-nav .nav-item a.nav-link, span.nav-link:hover:before,
-  .main-nav .nav-item a.nav-link, span.nav-link:hover:after {
+  .main-nav .nav-item a.nav-link,
+  span.nav-link:hover:before,
+  .main-nav .nav-item a.nav-link,
+  span.nav-link:hover:after {
     opacity: 1;
   }
 }
-.main-nav .nav-item a.nav-link, span.nav-link,.btn-search:hover,
-.main-nav .nav-item a.nav-link, span.nav-link, .btn-search:focus {
+.main-nav .nav-item a.nav-link,
+span.nav-link,
+.btn-search:hover,
+.main-nav .nav-item a.nav-link,
+span.nav-link,
+.btn-search:focus {
   color: #222;
 }
-.main-nav .nav-item.active a.nav-link, span.nav-link:before {
+.main-nav .nav-item.active a.nav-link,
+span.nav-link:before {
   opacity: 1;
 }
-.main-nav .nav-item.active a.nav-link, span.nav-link:after {
+.main-nav .nav-item.active a.nav-link,
+span.nav-link:after {
   opacity: 1;
 }
-.main-nav .nav-item.active a.nav-link, span.nav-link {
+.main-nav .nav-item.active a.nav-link,
+span.nav-link {
   color: #ec5598;
 }
-.main-nav .nav-item.show a.nav-link, span.nav-link {
+.main-nav .nav-item.show a.nav-link,
+span.nav-link {
   color: #ec5598;
 }
 .main-nav .nav-item.show > .dropdown-toggle::after {
@@ -2446,16 +2463,20 @@ textarea.form-control {
 .header-transparent .navbar-nav.mlr-auto {
   margin: 0 auto;
 }
-.header-transparent .nav-item a.nav-link, span.nav-link {
+.header-transparent .nav-item a.nav-link,
+span.nav-link {
   color: #222;
 }
 @media (min-width: 768px) {
-  .header-transparent .nav-item a.nav-link, span.nav-link {
+  .header-transparent .nav-item a.nav-link,
+  span.nav-link {
     color: #fff;
   }
 }
-.header-transparent .nav-item a.nav-link, span.nav-link.btn-search:hover,
-.header-transparent .nav-item a.nav-link, span.nav-link.btn-search:focus {
+.header-transparent .nav-item a.nav-link,
+span.nav-link.btn-search:hover,
+.header-transparent .nav-item a.nav-link,
+span.nav-link.btn-search:focus {
   color: #fff;
 }
 .header-transparent.navbar-sticky {
@@ -2466,13 +2487,16 @@ textarea.form-control {
 .header-transparent.navbar-sticky .navbar-brand .path-2 {
   fill: #222;
 }
-.header-transparent.navbar-sticky .nav-item a.nav-link, span.nav-link {
+.header-transparent.navbar-sticky .nav-item a.nav-link,
+span.nav-link {
   color: #222;
 }
-.header-transparent.navbar-sticky .nav-item a.nav-link, .navbar-nav .nav-item span.nav-link:hover {
+.header-transparent.navbar-sticky .nav-item a.nav-link,
+.navbar-nav .nav-item span.nav-link:hover {
   color: #ec5598;
 }
-.header-transparent.navbar-sticky.main-nav .nav-item.active a.nav-link, span.nav-link {
+.header-transparent.navbar-sticky.main-nav .nav-item.active a.nav-link,
+span.nav-link {
   color: #ec5598;
 }
 .header-transparent.navbar-sticky.main-nav .nav-item a.btn-search:focus {
@@ -2483,22 +2507,27 @@ textarea.form-control {
     color: #fff !important;
   }
 }
-.display-single_element .bg-dark .main-nav .nav-item a.nav-link, span.nav-link {
+.display-single_element .bg-dark .main-nav .nav-item a.nav-link,
+span.nav-link {
   color: #fff;
 }
-.display-single_element .bg-dark .main-nav a.nav-link, span.nav-link:before {
+.display-single_element .bg-dark .main-nav a.nav-link,
+span.nav-link:before {
   border-color: #fff;
 }
-.display-single_element .main-nav a.nav-link, span.nav-link:before {
+.display-single_element .main-nav a.nav-link,
+span.nav-link:before {
   border-color: #222;
 }
-.display-single_element .main-nav a.nav-link, span.nav-link:after {
+.display-single_element .main-nav a.nav-link,
+span.nav-link:after {
   border-color: transparent;
 }
 .display-single_element .main-nav {
   box-shadow: none;
 }
-.display-single_element .main-nav .nav-item a.nav-link, span.nav-link {
+.display-single_element .main-nav .nav-item a.nav-link,
+span.nav-link {
   color: #222;
 }
 .display-single_element .main-nav .navbar-collapse {
@@ -2540,7 +2569,8 @@ textarea.form-control {
     margin-left: unset;
   }
 }
-.logo-center .main-nav .nav-item a.nav-link, span.nav-link {
+.logo-center .main-nav .nav-item a.nav-link,
+span.nav-link {
   color: #222;
 }
 @media (min-width: 768px) {
@@ -2571,7 +2601,8 @@ textarea.form-control {
   transform: translate3d(0, 100%, 0);
   background: 0 0;
 }
-.up-scroll .navbar-scrollUp.is-visible .nav-item.active a.nav-link, span.nav-link {
+.up-scroll .navbar-scrollUp.is-visible .nav-item.active a.nav-link,
+span.nav-link {
   color: #ec5598;
 }
 .up-scroll .navbar-scrollUp.is-visible .path-2 {
@@ -2855,10 +2886,7 @@ textarea.form-control {
 @media (min-width: 768px) {
   .main-slider .common-inner {
     padding-left: 15px;
-
   }
- 
-
 }
 .owl-stage-outer {
   border-bottom: 4px solid #ec5598;
@@ -3077,7 +3105,7 @@ textarea.form-control {
 }
 @media (min-width: 320px) {
   .aboutInfo {
-    padding:  30px;
+    padding: 30px;
     background-color: #fff;
     margin: 0 -30px;
   }
@@ -7394,14 +7422,14 @@ footer .footerText img {
 .load-more {
   margin: 0 auto;
 }
-.load-more-container{
+.load-more-container {
   text-align: center;
 }
 .singleProduct .product-count {
   justify-content: flex-start;
 }
 
-.varietySection .discount{
+.varietySection .discount {
   position: absolute;
   padding: 5px;
   background-color: #ec5598;
@@ -7411,43 +7439,40 @@ footer .footerText img {
   font-size: 13px;
 }
 
-.productCaption h3 del{
+.productCaption h3 del {
   color: #999;
   font-size: 17px;
 }
-.navbar-nav .nav-item .nav-link{
+.navbar-nav .nav-item .nav-link {
   color: black;
 }
 
-.reviewSection .myContainer{
+.reviewSection .myContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-@media (max-width:650px)  {
-  table{
-      text-align: center;
+@media (max-width: 650px) {
+  table {
+    text-align: center;
   }
-  th{
-      display: none;
-  }
-  td{
-      display: flex;
-      justify-content: space-between;
-     
-  }
-  td::before{
-      content: attr(data-cell) " : ";
-      font-weight: 700;
-      text-transform: capitalize;
-  }
-  td:last-child:before{
+  th {
     display: none;
-
   }
-  td:last-child{
+  td {
+    display: flex;
+    justify-content: space-between;
+  }
+  td::before {
+    content: attr(data-cell) " : ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  td:last-child:before {
+    display: none;
+  }
+  td:last-child {
     justify-content: center;
   }
-
 }
