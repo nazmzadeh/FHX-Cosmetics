@@ -9,6 +9,7 @@
     <title>FHX - Cosmetics</title>
 
     <!-- GOOGLE FONT -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&amp;family=Montserrat:wght@400;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap"
       rel="stylesheet"
@@ -39,9 +40,6 @@
 
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet" />
-    <link href="#" rel="stylesheet" id="rtl_css" />
-    <link href="css/default.css" rel="stylesheet" id="option_color" />
-
     <style>
       /* Paste this css to your style sheet file or under head tag */
       /* This only works with JavaScript,
@@ -74,7 +72,7 @@
     <div class="se-pre-con"></div>
     <div class="main-wrapper">
       <!-- HEADER -->
-      <header id="pageTop" class="header">
+      <header id="pageTop" class="header site-navbar site-navbar-target">
         <!-- TOP INFO BAR -->
         <div class="top-info-bar">
           <div class="container">
@@ -98,262 +96,168 @@
         </div>
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-md main-nav navbar-light">
+
+        <div class="site-mobile-menu site-navbar-target">
+          <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+              <span class="icon-close2 js-menu-toggle"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+          </div>
+          <div class="site-mobile-menu-body"></div>
+        </div>
+        <div class="navbar-light">
           <div class="container">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+            <div class="row myRow">
+              <div class="col-6 col-xl-3">
+                <a class="navbar-brand" href="index.html"
+                  ><img
+                    class="lazyestload"
+                    data-src="img/logo.png"
+                    src="img/logo.png"
+                    alt="logo"
+                /></a>
+              </div>
 
-            <a class="navbar-brand" href="index.html"
-              ><img
-                class="lazyestload"
-                data-src="img/logo.png"
-                src="img/logo.png"
-                alt="logo"
-            /></a>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html"
-                    >Ana səhifə <span class="sr-only">(current)</span></a
+              <div class="col-12 col-md-9 d-none d-xl-block">
+                <nav
+                  class="site-navigation position-relative navbar-nav main-nav navbar-expand-md"
+                  role="navigation"
+                >
+                  <ul
+                    class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
                   >
-                </li>
-
-                <li class="dropdown megaDropMenu nav-item">
-                  <span
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Məhsullar</span
-                  >
-                  <div class="categories dropdown-menu">
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 1</a
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html"
+                        >Ana səhifə</a
                       >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li>
-                          <a href="products.html" role="link"
-                            >Alt kateqoriya 1</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#">Product Left Sidebar</a>
-                        </li>
-                        <li><a href="#">Product 3 Col</a></li>
-                        <li><a href="#">Product 4 Col</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 2</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li>
-                          <a href="products.html">Product Right Sidebar</a>
-                        </li>
-                        <li>
-                          <a href="#">Product Left Sidebar</a>
-                        </li>
-                        <li><a href="#">Product 3 Col</a></li>
-                        <li><a href="#">Product 4 Col</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 3</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li>
-                          <a href="products.html">Alt kateqoriya 1</a>
-                        </li>
-                        <li><a href="products.html">User Profile</a></li>
-                        <li><a href="products.html">Address</a></li>
-                        <li><a href="#">All Order</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                        <li>
-                          <a href="#">User Dashboard</a>
-                        </li>
-                        <li><a href="#">User Profile</a></li>
-                        <li><a href="#">Address</a></li>
-                        <li><a href="#">All Order</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 4</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li><a href="products.html">Alt kateqoriya 1</a></li>
-                        <li><a href="products.html">Checkout</a></li>
-                        <li><a href="products.html">Confirmation</a></li>
-                        <li><a href="products.html">Price table</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 5</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li><a href="products.html">Alt kateqoriya 1</a></li>
-                        <li><a href="products.html">Checkout</a></li>
-                        <li><a href="#">Confirmation</a></li>
-                        <li><a href="#">Price table</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 6</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li><a href="products.html">Alt kateqoriya 1</a></li>
-                        <li><a href="products.html">Checkout</a></li>
-                        <li><a href="#">Confirmation</a></li>
-                        <li><a href="#">Price table</a></li>
-                      </ul>
-                    </div>
-                    <div class="category-item dropdown">
-                      <a
-                        href="products.html"
-                        class="category-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Category 7</a
-                      >
-                      <ul class="list-unstyled submenu">
-                        <li><a href="products.html">Hamısına bax</a></li>
-                        <li><a href="products.html">Alt kateqoriya 1</a></li>
-                        <li><a href="products.html">Checkout</a></li>
-                        <li><a href="#">Confirmation</a></li>
-                        <li><a href="#">Price table</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    href="blogs.html"
-                    >Bloq</a
-                  >
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    href="about.html"
-                    >Haqqımızda</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    href="contact.html"
-                    >Əlaqə</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    href="#"
-                    class="lang_btn nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    &#127760; Az
-                  </a>
-                  <ul class="lang_list dropdown-menu">
-                    <li class="active">
-                      <a href="#">Ru</a>
                     </li>
-                    <li>
-                      <a href="#">Eng</a>
+                    <li class="nav-item has-children">
+                      <span class="nav-link">Məhsullar</span>
+                      <ul class="dropdown">
+                        <li>
+                          <a href="products.html">Hamısına bax</a>
+                        </li>
+                        <li>
+                          <a href="products.html">Category 1</a>
+                        </li>
+                        <li class="has-children">
+                          <a href="products.html">Category 2</a>
+                          <ul class="dropdown">
+                            <li><a href="#1">Alt kateqoriya 1</a></li>
+                            <li><a href="#2">Alt kateqoriya 2</a></li>
+                            <li><a href="#3">Alt kateqoriya 3</a></li>
+                            <li><a href="#1">Alt kateqoriya 4</a></li>
+                            <li><a href="#2">Alt kateqoriya 5</a></li>
+                            <li><a href="#3">Alt kateqoriya 6</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="products.html">Category 3</a>
+                        </li>
+                        <li class="has-children">
+                          <a href="products.html">Category 4</a>
+                          <ul class="dropdown">
+                            <li><a href="#1">Alt kateqoriya 1</a></li>
+                            <li><a href="#2">Alt kateqoriya 2</a></li>
+                            <li><a href="#3">Alt kateqoriya 3</a></li>
+                            <li><a href="#3">Alt kateqoriya 4</a></li>
+                          </ul>
+                        </li>
+                        <li class="has-children">
+                          <a href="products.html">Category 5</a>
+                          <ul class="dropdown">
+                            <li><a href="#1">Alt kateqoriya 1</a></li>
+                            <li><a href="#2">Alt kateqoriya 2</a></li>
+                            <li><a href="#3">Alt kateqoriya 3</a></li>
+                            <li><a href="#3">Alt kateqoriya 4</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="products.html">Category 6</a>
+                        </li>
+                        <li class="has-children">
+                          <a href="products.html">Category 7</a>
+                          <ul class="dropdown">
+                            <li><a href="#1">Alt kateqoriya 1</a></li>
+                            <li><a href="#2">Alt kateqoriya 2</a></li>
+                            <li><a href="#3">Alt kateqoriya 3</a></li>
+                            <li><a href="#4">Alt kateqoriya 4</a></li>
+                            <li><a href="#5">Alt kateqoriya 5</a></li>
+                          </ul>
+                        </li>
+                        <li class="has-children">
+                          <a href="products.html">Category 8</a>
+                          <ul class="dropdown">
+                            <li><a href="#1">Alt kateqoriya 1</a></li>
+                            <li><a href="#2">Alt kateqoriya 2</a></li>
+                            <li><a href="#3">Alt kateqoriya 3</a></li>
+                            <li><a href="#4">Alt kateqoriya 4</a></li>
+                          </ul>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                      <a href="#">Chi</a>
+
+                    <li class="nav-item">
+                      <a href="blogs.html" class="nav-link">Bloq</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="about.html" class="nav-link">Haqqımızda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Əlaqə</a>
+                    </li>
+                    <li class="nav-item has-children">
+                      <a href="#" class="lang_btn nav-link"> &#127760; Az </a>
+                      <ul class="lang_list dropdown">
+                        <li class="active">
+                          <a href="#">Ru</a>
+                        </li>
+                        <li>
+                          <a href="#">Eng</a>
+                        </li>
+                        <li>
+                          <a href="#">Chi</a>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
-                </li>
-              </ul>
-            </div>
 
-            <div class="cart_btn">
-              <a href="cart.html"
-                ><i class="fa fa-shopping-basket" aria-hidden="true"></i
-                ><span class="badge">0</span></a
+                  <div class="cart_btn">
+                    <a href="cart.html"
+                      ><i class="fa fa-shopping-basket" aria-hidden="true"></i
+                      ><span class="badge">0</span></a
+                    >
+                  </div>
+                </nav>
+              </div>
+
+              <div
+                class="col-6 d-xl-none ml-md-0 py-3 right-part"
+                style="position: relative; top: 3px"
               >
+                <div class="cart_btn">
+                  <a href="cart.html"
+                    ><i class="fa fa-shopping-basket" aria-hidden="true"></i
+                    ><span class="badge">0</span></a
+                  >
+                </div>
+                <button
+                  class="navbar-toggler site-menu-toggle js-menu-toggle float-right"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="true"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
             </div>
-            <!-- header search ends-->
           </div>
-        </nav>
+        </div>
       </header>
 
       <!-- MAIN SLIDER -->
