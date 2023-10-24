@@ -1,65 +1,55 @@
 // Navbar
 $(function () {
-
-
   var siteMenuClone = function () {
-
     $('.js-clone-nav').each(function () {
       var $this = $(this);
       $this.clone().attr('class', 'site-nav-wrap').appendTo('.site-mobile-menu-body');
     });
 
-
     setTimeout(function () {
-
       var counter = 0;
       $('.site-mobile-menu .has-children').each(function () {
         var $this = $(this);
-
         $this.prepend('<span class="arrow-collapse collapsed">');
-
         $this.find('.arrow-collapse').attr({
           'data-toggle': 'collapse',
           'data-target': '#collapseItem' + counter,
         });
-
         $this.find('> ul').attr({
           'class': 'collapse',
           'id': 'collapseItem' + counter,
         });
-
         counter++;
-
       });
-
     }, 1000);
 
-    $('body').on('click', '.arrow-collapse', function (e) {
+    // Event binding for both parent and deep dropdowns
+    $('.site-mobile-menu .has-children, .site-mobile-menu .has-children li.has-children').on('click', function (e) {
       var $this = $(this);
-      if ($this.closest('li').find('.collapse').hasClass('show')) {
+      var $submenu = $this.find('> ul');
+      if ($submenu.hasClass('show')) {
+        $submenu.removeClass('show');
         $this.removeClass('active');
       } else {
+        $submenu.addClass('show');
         $this.addClass('active');
       }
-      e.preventDefault();
-
+      e.stopPropagation();
     });
 
     $(window).resize(function () {
       var $this = $(this),
         w = $this.width();
-
       if (w > 768) {
         if ($('body').hasClass('offcanvas-menu')) {
           $('body').removeClass('offcanvas-menu');
         }
       }
-    })
+    });
 
     $('body').on('click', '.js-menu-toggle', function (e) {
       var $this = $(this);
       e.preventDefault();
-
       if ($('body').hasClass('offcanvas-menu')) {
         $('body').removeClass('offcanvas-menu');
         $this.removeClass('active');
@@ -67,9 +57,8 @@ $(function () {
         $('body').addClass('offcanvas-menu');
         $this.addClass('active');
       }
-    })
+    });
 
-    // click outisde offcanvas
     $(document).mouseup(function (e) {
       var container = $(".site-mobile-menu");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
@@ -80,8 +69,9 @@ $(function () {
     });
   };
   siteMenuClone();
-
 });
+
+
 let owlCarousel = document.querySelector(".slider_js")
 if (owlCarousel) {
   jQuery(document).ready(function () {
@@ -273,3 +263,5 @@ increaseBtns.forEach((inc) => {
   }
 
 })
+
+
